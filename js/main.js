@@ -35,10 +35,25 @@ console.log(result);
 
 const suma = (a, b) => a + b;
 
+//MAP///
+
 let singulares = ["manzana", "banana", "naranja"];
 
 
-let plurales = singulares.map(function (fruta) {
-    console.log(fruta);
+let plurales = singulares.map(function (f) {
+    return f + "s";
 });
 
+console.log(plurales);
+
+
+
+
+let getPrecioFinal = (precio, impuesto = 0.7) => precio + precio *
+impuesto;
+
+let resultado = getPrecioFinal(500); //850
+let resultado2 = getPrecioFinal(500, 1);
+
+console.log(resultado);
+console.log(resultado2);
