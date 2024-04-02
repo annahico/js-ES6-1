@@ -47,13 +47,22 @@ let plurales = singulares.map(function (f) {
 console.log(plurales);
 
 
+///parametros de valores por defecto
 
+// let getPrecioFinal = (precio, impuesto = 0.7) => precio + precio *
+// impuesto;
 
-let getPrecioFinal = (precio, impuesto = 0.7) => precio + precio *
-impuesto;
+// let resultado = getPrecioFinal(500); //850
+// let resultado2 = getPrecioFinal(500, 1); //1000
 
-let resultado = getPrecioFinal(500); //850
-let resultado2 = getPrecioFinal(500, 1);
+// console.log(resultado);
+// console.log(resultado2);
 
-console.log(resultado);
-console.log(resultado2);
+let getPrecioFinal = (numero, prefijo = "RX") => prefijo + numero;
+
+let random = Math.floor(Math.random() * 999);
+
+let resultado = getPrecioFinal(random);
+
+console.log("El robot se llama: ", resultado);
+
