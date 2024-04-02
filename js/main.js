@@ -22,3 +22,23 @@ return letter == calculatedLetter;
 
 const result = validarDNI(123456789, "H");
 console.log(result);
+
+// FUNCION ARROW  =>
+
+// function suma (a, b ){
+//     return a + b;
+// }
+
+// const suma = (a, b) => {
+//     return a + b;
+// } ahora compactaremos el codigo porque tiene UN solo return
+
+const suma = (a, b) => a + b;
+
+let singulares = ["manzana", "banana", "naranja"];
+
+
+let plurales = singulares.map(function (fruta) {
+    console.log(fruta);
+});
+
